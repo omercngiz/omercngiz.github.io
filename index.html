@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <title>Meşk</title>
+
+  <script type="module" crossorigin src="/assets/index-L-gWdS_Y.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-f9a4ymmZ.css">
+</head>
+
+<body>
+  <nav class="shadow sticky-top bg-white">
+    <div class="d-flex flex-column">
+
+
+      <!-- Header 1st half -->
+      <div class="container my-2">
+
+        <div class="row">
+
+          <!-- Logo -->
+          <div class="navbar-header col-2 col-md-3 relative">
+            <a href="" class="navbar-brand brand-font">meşk</a>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="col-6 d-none d-sm-flex align-items-center justify-content-center">
+            <form id="Msearch" class="d-flex" role="search">
+              <button id="headerSearchBtn" class="underline">
+                <i class="fa fa-search"></i>
+              </button>
+              <input class="form-control form-control-header underline" type="search" placeholder="Arama yap..." aria-label="Search">
+            </form>
+          </div>
+
+          <!-- SignIn / SignUp Buttons -->
+          <div class="d-none d-sm-flex col-4 col-md-3 flex-row align-items-center">
+            <button class="btn btn-outline-success max-h-35 ms-auto">
+              Üye Ol
+            </button>
+            <button class="btn btn-success max-h-35 ms-2">
+              Giriş Yap
+            </button>
+          </div>
+          
+
+          <!-- Small Devices - Menu -->
+          <div class="col-3 d-flex d-sm-none align-items-center ms-auto">
+            <i class="menu-icon fa fa-bars ms-auto" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu"></i>
+          </div>
+          
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasExampleLabel">
+            
+            <div class="offcanvas-header">
+              <div class="navbar-header col-3 relative">
+                <a href="" class="navbar-brand brand-font">meşk</a>
+              </div>
+              <button class="btn-close fa fa-times fs-2 primary-color" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body d-flex flex-column">
+              
+              <form id="Msearch" class="d-flex align-self-start ms-auto me-auto mb-4" role="search">
+                <button id="headerSearchBtn" class="underline">
+                  <i class="fa fa-search"></i>
+                </button>
+                <input class="form-control form-control-header underline" type="search" placeholder="Arama yap..." aria-label="Search">
+              </form>
+
+              <div class="container">
+                <ul class="d-flex flex-column">
+                  <li class="d-flex justify-content-center my-4">
+                    <a href="deneme.html" class="nav-link"><i class="fa fa-store" aria-hidden="true"></i> Mağaza</a>
+                  </li>
+                  <li class="d-flex justify-content-center my-4">
+                    <a href="#" class="nav-link"><i class="fa fa-info-circle" aria-hidden="true"></i>
+                      Hakkımızda</a>
+                  </li>
+                  <li class="d-flex justify-content-center my-4">
+                    <a href="#contact" onclick="smoothScrollWithOffset(event)" class="nav-link"><i class="fa-solid fa-headset"></i> İletişim</a>
+                  </li>
+                  <li class="d-flex justify-content-center">
+        
+                    <!-- Language Options Dropdown -->
+                    <div class="dropdown d-flex align-items-center">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        TR
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">TR</a></li>
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                        <li><a class="dropdown-item" href="#">GR</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="align-self-center d-flex flex-column mt-auto mb-auto">
+                <button class="btn btn-outline-success minw-150px mb-4">
+                  Üye Ol
+                </button>
+                <button class="btn btn-success minw-150px">
+                  Giriş Yap
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- User Buttons -->
+          <div class="col-3 d-flex flex-row d-none">
+            <ul class="navbar-nav d-flex flex-row ms-auto">
+              <li class="nav-item mx-3 d-flex">
+                <i class="fa fa-message grey"></i>
+              </li>
+              <li class="nav-item mx-3 d-flex">
+                <i class="fa fa-user grey"></i>
+              </li>
+              <li class="nav-item mx-3 d-flex">
+                <i class="fas fa-shopping-bag grey"></i>
+              </li>
+            </ul>
+
+            <!-- User Dropdown Menu -->
+            <div class="container-fluid">
+              <div class="flex-shrink-0 dropdown me-0 ms-4 leftline">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" class="rounded-circle">
+                  Omer Cengiz
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <!-- Header 2nd half -->
+      <div class="container d-sm-block d-none">
+        <ul class="d-flex flex-row">
+          <li class="d-flex justify-content-center mx-2 my-2">
+            <a href="deneme.html" class="nav-link"><i class="fa fa-store" aria-hidden="true"></i> Mağaza</a>
+          </li>
+          <li class="d-flex justify-content-center mx-2 my-2">
+            <a href="#" class="nav-link"><i class="fa fa-info-circle" aria-hidden="true"></i>
+              Hakkımızda</a>
+          </li>
+          <li class="d-flex justify-content-center mx-2 my-2">
+            <a href="#contact" onclick="smoothScrollWithOffset(event)" class="nav-link"><i class="fa-solid fa-headset"></i> İletişim</a>
+          </li>
+          <li class="d-flex justify-content-center">
+
+            <!-- Language Options Dropdown -->
+            <div class="dropdown d-flex align-items-center">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                TR
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">TR</a></li>
+                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item" href="#">GR</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Slogan Banner -->
+  <div id="slogan" class="w-100 mb-5">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+      <h2 class="my-4 white-text">
+        <span class="brand-font secondary-color">aşk</span>
+        olmadan
+        <span class="brand-font primary-color">meşk</span>
+        olmaz
+      </h2>
+      <p class="white-text mb-4">
+        Sanat, sevgiyle yoğrulduğunda anlam kazanır. Biz de bu inançla, hat sanatını dünyanın dört bir yanına taşımayı
+        amaçlıyoruz. Hat sanatının İslam ve sanat dünyasındaki eşsiz yerini keşfetmeniz için, dünya çapında ün kazanmış
+        hattatların eserlerini ve benzersiz hat çerçevelerini sizlerle buluşturuyoruz.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Big Slider -->
+   <div class="container">
+
+    <div class="d-flex justify-content-center mb-2">
+      <h2>
+        <a class="text-decoration-none" href="favs.html">Evinizi ve ofisinizi güzelleştirin</a>
+      </h2>
+    </div>
+
+    <div id="slider1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#slider1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+
+      <!-- Slides -->
+      <div class="carousel-inner carousel-inner-cl">
+
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active ratio ratio-bigSlider" data-bs-interval="6000">
+          <img src="/assets/studio-16_9-1-D1WCf4v2.jpeg" class="d-block w-100" alt="..." >
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="carousel-item ratio ratio-bigSlider" data-bs-interval="6000">
+          <img src="/assets/studio-16_9-2-DoRN8b2j.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="carousel-item ratio ratio-bigSlider" data-bs-interval="6000">
+          <img src="/assets/studio-16_9-3-DtTWXatx.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p>
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item ratio ratio-bigSlider" data-bs-interval="6000">
+          <img src="/assets/studio-16_9-4-CdNqhXmV.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+
+  <div class="line my-5"></div>
+
+
+  <!-- Artist's Slider -->
+  <div class="container">
+    
+    <div class="d-flex justify-content-center mb-2">
+      <h2>
+        <a class="text-decoration-none" href="favs.html">Dünyaca ünlü hattatların eserlerini inceleyin</a>
+      </h2>
+    </div>
+    
+    <div class="swiper artist">
+      <div class="swiper-wrapper artist">
+
+        <div class="swiper-slide artist">
+          <div class="card artist">
+            <img src="/assets/hattat-3_4-1-kwqII-1Y.jpeg" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="swiper-slide artist">
+          <div class="card artist">
+            <img class="card-img-top" src="/assets/hattat-3_4-2-DZhhl5m7.jpeg" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="swiper-slide artist">
+          <div class="card artist">
+            <img class="card-img-top" src="/assets/hattat-3_4-3-AvY0uqVc.jpeg" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="swiper-slide artist">
+          <div class="card artist">
+            <img class="card-img-top" src="/assets/hattat-3_4-4-FAMorysj.jpeg" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="swiper-slide artist">
+          <div class="card artist">
+            <img class="card-img-top" src="/assets/hattat-3_4-5-C8ILoFWa.jpeg" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="swiper-slide artist">
+          <div class="card artist">
+            <img class="card-img-top" src="/assets/hattat-3_4-6-BeIKg8Wa.jpeg" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="swiper-slide artist">
+          <div class="card artist">
+            <img class="card-img-top" src="/assets/hattat-3_4-7-D1aMpwir.jpeg" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="swiper-slide artist">
+          <div class="card artist">
+            <img class="card-img-top" src="/assets/hattat-3_4-8-CiQU5TDY.jpeg" alt="Card image cap">
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
+
+  <div class="line my-5"></div>
+
+
+  <!-- Product Card's Slider -->
+  <div class="container">
+
+    <div class="d-flex justify-content-center mb-2">
+      <h2>
+        <a class="text-decoration-none" href="favs.html">En sevilen baskılara göz atın</a>
+      </h2>
+    </div>
+
+    <div class="swiper product">
+      <div class="swiper-wrapper product">
+
+        <div class="swiper-slide product">
+          <div class="card product rounded">
+            <img class="card-img-top rounded" src="/assets/kitap-2_1-1-CLMg7Cei.jpeg" alt="Card image cap">
+            <div class="card-body product mt-1">
+              <h5 class="card-title product m-0 mb-1">Hafız Osman hattı Esma-i Hüsna</h5>
+              <p class="card-text product m-0 mb-1"><i>30x50 135gr kuşe kağıt baskı</i></p>
+              <p class="card-text product fiyat m-0 mb-2"><b>3000₺</b></p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#" class="btn btn-danger"><i class="fa fa-heart"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide product">
+          <div class="card product rounded">
+            <img class="card-img-top rounded" src="/assets/kitap-2_1-2-CR-NIvpt.jpeg" alt="Card image cap">
+            <div class="card-body product mt-1">
+              <h5 class="card-title product m-0 mb-1">Hafız Nesimi hattı Cevşen'ül Kebir</h5>
+              <p class="card-text product m-0 mb-1"><i>30x50 135gr kuşe kağıt baskı</i></p>
+              <p class="card-text product fiyat m-0 mb-2"><b>4500₺</b></p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#" class="btn btn-danger"><i class="fa fa-heart"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide product">
+          <div class="card product rounded">
+            <img class="card-img-top rounded" src="/assets/kitap-2_1-3-CTKjwNc5.jpeg" alt="Card image cap">
+            <div class="card-body product mt-1">
+              <h5 class="card-title product m-0 mb-1">Hafız Osman hattı Esma-i Hüsna</h5>
+              <p class="card-text product m-0 mb-1"><i>30x50 135gr kuşe kağıt baskı</i></p>
+              <p class="card-text product fiyat m-0 mb-2"><b>7000₺</b></p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#" class="btn btn-danger"><i class="fa fa-heart"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide product">
+          <div class="card product rounded">
+            <img class="card-img-top rounded" src="/assets/kitap-2_1-4-CWaYlUtU.jpeg" alt="Card image cap">
+            <div class="card-body product mt-1">
+              <h5 class="card-title product m-0 mb-1">Hafız Osman hattı Esma-i Hüsna</h5>
+              <p class="card-text product m-0 mb-1"><i>30x50 135gr kuşe kağıt baskı</i></p>
+              <p class="card-text product fiyat m-0 mb-2"><b>1000₺</b></p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#" class="btn btn-danger"><i class="fa fa-heart"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide product">
+          <div class="card product rounded">
+            <img class="card-img-top rounded" src="/assets/kitap-2_1-1-CLMg7Cei.jpeg" alt="Card image cap">
+            <div class="card-body product mt-1">
+              <h5 class="card-title product m-0 mb-1">Hafız Osman hattı Esma-i Hüsna</h5>
+              <p class="card-text product m-0 mb-1"><i>30x50 135gr kuşe kağıt baskı</i></p>
+              <p class="card-text product fiyat m-0 mb-2"><b>700₺</b></p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#" class="btn btn-danger"><i class="fa fa-heart"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide product">
+          <div class="card product rounded">
+            <img class="card-img-top rounded" src="/assets/kitap-2_1-2-CR-NIvpt.jpeg" alt="Card image cap">
+            <div class="card-body product mt-1">
+              <h5 class="card-title product m-0 mb-1">Hafız Osman hattı Esma-i Hüsna</h5>
+              <p class="card-text product m-0 mb-1"><i>30x50 135gr kuşe kağıt baskı</i></p>
+              <p class="card-text product fiyat m-0 mb-2"><b>90000₺</b></p>
+              <div class="card-buttons d-flex flex-row">
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#" class="btn btn-danger"><i class="fa fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
+
+
+  <div class="line my-5"></div>
+
+
+  <!-- Contact Section -->
+  <div class="container">
+
+    <div id="contact" class="d-flex justify-content-center mb-3">
+      <h2>Bizimle iletişime geçin</h2>
+    </div>
+    <div id="loctCont" class="row">
+
+      <div class="col-12 col-md-7">
+        <div class="location ratio ratio-location">
+          <iframe
+            class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.360042538707!2d29.097049875782204!3d41.126665571334165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacb18be5e0207%3A0x83d02d66f31cb33b!2zQW5hZG9sdSBZYWthc8SxLCBHw7xtw7zFn3N1eXUsIDM0ODIwIEJleWtvei_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1725036842877!5m2!1str!2str"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5">
+        <div class="contact"> 
+          <form>
+    
+            <!-- Name input -->
+            <div data-mdb-input-init class="form-outline mb-2">
+              <label class="form-label m-0" for="form4Example1">İsim</label>
+              <input type="text" id="form4Example1" class="form-control">
+            </div>
+          
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-2">
+              <label class="form-label m-0" for="form4Example2">Email</label>
+              <input type="email" id="form4Example2" class="form-control">
+            </div>
+          
+            <!-- Message input -->
+            <div data-mdb-input-init class="form-outline mb-2">
+              <label class="form-label m-0" for="form4Example3">Mesaj</label>
+              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input  class="form-check-success me-2" type="checkbox" value="" id="form4Example4" checked>
+              <label class="form-check-label" for="form4Example4">
+                Bu mesajın bir kopyasını bana gönder
+              </label>
+            </div>
+          
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="button" class="btn btn-success btn-block">Gönder</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="line mt-5"></div>
+
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="pt-3">
+      <div class="row">
+
+        <div class="col-3">
+          <h5>Sayfa Linkleri  </h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Anasayfa</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Mağaza</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Hakkımızda</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">İletişim</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Yasal Yazı</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 ms-auto">
+          <form>
+            <h5>Gazetemize abone olun</h5>
+            <p>Bizden gelen yeni ve heyecan verici şeylerin aylık özeti</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email adresi">
+              <button class="btn btn-success" type="button">Abone Ol</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between pt-4 my-4 border-top">
+        <p class="allRights order-2 order-md-1 m-0">© 1997 meskyayincilik, Inc. All rights reserved.</p>
+        <ul class="socialIcons order-1 order-md-2 list-unstyled d-flex fs-2 mb-2 mb-md-0 mx-auto mx-md-0">
+          <li class="">
+            <a class="link-dark" href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"><i class="fa-brands fa-meta"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"><i class="fa-brands fa-telegram"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
